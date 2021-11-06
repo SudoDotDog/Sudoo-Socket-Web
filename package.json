@@ -1,0 +1,42 @@
+{
+  "name": "@sudoo/socket-web",
+  "version": "1.0.0",
+  "description": "Socket client for Web",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Sudoo-Socket-Web.git"
+  },
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Sudoo-Socket-Web/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Sudoo-Socket-Web#readme",
+  "dependencies": {
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "@sudoo/build-utils": "^1.0.0",
+    "@sudoo/license": "^1.1.0",
+    "@sudoo/triforce": "^2.15.1",
+    "@types/websocket": "^1.0.4"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
