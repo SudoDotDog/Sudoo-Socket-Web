@@ -1,23 +1,24 @@
 {
     "cSpell.words": [
-        "Deserialize",
-        "RMRF",
-        "Stringifyable",
-        "Unmount",
-        "WMXPY",
         "bwnl",
         "camelcase",
         "clazz",
         "codecov",
+        "cwebsocket",
+        "Deserialize",
         "docz",
         "esnext",
         "forin",
         "htmlfile",
         "mocharc",
+        "RMRF",
         "splited",
+        "Stringifyable",
         "sudoo",
         "triforce",
-        "tshook"
+        "tshook",
+        "Unmount",
+        "WMXPY"
     ],
     "eslint.options": {
         "configFile": "./typescript/.eslintrc.json"
