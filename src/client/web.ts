@@ -5,8 +5,7 @@
  */
 
 import { ICloseEvent, IMessageEvent, w3cwebsocket as WebSocketClient } from "websocket";
-import { parseBasicAuthorizationToken } from "../util/authorization";
-import { fixWebSocketUrl } from "../util/url";
+import { encodeBasicAuthorizationTokenWeb, fixWebSocketUrl } from "@sudoo/socket-util";
 import { ClientCloseHandler, ClientConnectHandler, ClientErrorHandler, SocketClientOptions } from "./declare";
 import { SocketClientMessageHandler } from "./message-handler";
 
@@ -227,7 +226,7 @@ export class SocketClientWeb {
 
                 case 'basic': {
 
-                    headers.Authorization = `Basic ${parseBasicAuthorizationToken(
+                    headers.Authorization = `Basic ${encodeBasicAuthorizationTokenWeb(
                         this._options.authorization.username,
                         this._options.authorization.password,
                     )}`;
