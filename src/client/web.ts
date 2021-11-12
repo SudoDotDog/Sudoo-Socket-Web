@@ -141,11 +141,17 @@ export class SocketClientWeb {
         return this;
     }
 
-    public createAndGetMessageHandler(): SocketClientMessageHandler {
+    public createAddAndGetMessageHandler(): SocketClientMessageHandler {
 
         const handler: SocketClientMessageHandler = SocketClientMessageHandler.create();
         this._messageHandlers.add(handler);
         return handler;
+    }
+
+    public addMessageHandler(handler: SocketClientMessageHandler): this {
+
+        this._messageHandlers.add(handler);
+        return this;
     }
 
     public removeMessageHandler(handler: SocketClientMessageHandler): this {
