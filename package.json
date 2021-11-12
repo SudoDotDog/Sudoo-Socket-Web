@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/socket-web",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Socket client for Web",
   "directories": {
     "doc": "docs"
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@sudoo/build-utils": "^1.0.0",
     "@sudoo/license": "^1.1.0",
-    "@sudoo/triforce": "^2.15.1",
+    "@sudoo/triforce": "^2.16.0",
     "@types/websocket": "^1.0.4"
   },
   "nyc": {
